@@ -1,0 +1,16 @@
+
+(a) Latency
+(b) Request per Second
+
+Using wrk
+THREADS = 4
+CONNECTIONS = 500 # Concurrent-Connections
+DURATION = 15s 
+
+All Rust-frameworks(under workspace.members) are run 
+using cargo run --bin=`name`
+
+Benchmarked using:
+wrk -t THREADS -c CONNECTIONS -d DURATION -L http://localhost:`port`
+
+...all results are @result

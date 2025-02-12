@@ -1,0 +1,22 @@
+
+# Included backends:
+# `members` + Django + Bottle + Flask + Tornado
+
+[workspace]
+members = ["Actix", "Rocket", "Warp", "Axum", "Gotham"]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+author = "avi"
+description = "On some popular backend services."
+
+
+
+[workspace.dependencies]
+actix-web = "4"
+rocket = "0.5.1"
+warp = "0.3"
+tokio = { version = "1", features = ["full"] }
+axum = "0.8.1"
+gotham = "0.7.4"

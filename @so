@@ -1,0 +1,21 @@
+
+So what?
+
+(A) The worst performant framework in Rust, Rocket still
+outperforms the best performant framework in python, Tornado
+by an order of x2. 
+
+(B) The best performant framework in Rust, Warp processes
+about x20 times the number of request than the best framework
+in Python, Tornado.
+
+(C) Rocket, which claims to be similar to Flask, Bottle, 
+is x5 more performant than both.
+
+(D) The best performant framework in Python, Tornado is the 
+oldest among all.
+
+(E) Django is the worst performant among all frameworks.
+
+(F) I give up on Django.
+

@@ -1,0 +1,102 @@
+
+Read @criterion for more information
+
+
+Rust-frameworks
+----------------------
+
+Actix:
+Running 15s test @ http://localhost:4000
+  4 threads and 500 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     5.76ms  796.54us  53.95ms   91.31%
+    Req/Sec    21.79k   813.46    25.61k    71.83%
+  1301889 requests in 15.05s, 161.41MB read
+Requests/sec:  86504.25
+Transfer/sec:     10.72MB
+
+Axum:
+Running 15s test @ http://localhost:8888
+  4 threads and 500 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     6.47ms    3.31ms  53.26ms   70.31%
+    Req/Sec    19.60k     1.70k   32.68k    70.33%
+  1173295 requests in 15.09s, 154.41MB read
+Requests/sec:  77758.50
+Transfer/sec:     10.23MB
+
+Rocket: 
+Running 15s test @ http://localhost:8000
+  4 threads and 500 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    48.69ms   24.02ms 164.54ms   69.26%
+    Req/Sec     2.60k   165.23     3.26k    63.83%
+  155374 requests in 15.04s, 36.60MB read
+Requests/sec:  10331.85
+Transfer/sec:      2.43MB
+
+Gotham:
+Running 15s test @ http://localhost:5001
+  4 threads and 500 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     7.16ms    3.54ms  31.95ms   70.08%
+    Req/Sec    17.68k     1.55k   24.08k    70.00%
+  1057987 requests in 15.08s, 167.49MB read
+Requests/sec:  70162.84
+Transfer/sec:     11.11MB
+
+Warp:
+Running 15s test @ http://localhost:3003
+  4 threads and 500 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     5.28ms    3.21ms 204.27ms   75.94%
+    Req/Sec    23.95k     3.36k   36.30k    69.45%
+  1432258 requests in 15.10s, 176.20MB read
+Requests/sec:  94877.27
+Transfer/sec:     11.67MB
+
+Python-Frameworks
+-------------------
+
+Bottle:
+Running 15s test @ http://localhost:3333
+  4 threads and 500 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     3.49ms   45.42ms   1.80s    99.55%
+    Req/Sec     1.73k     1.35k    6.01k    71.37%
+  44373 requests in 15.06s, 7.07MB read
+  Socket errors: connect 0, read 0, write 0, timeout 16
+Requests/sec:   2945.70
+Transfer/sec:    480.40KB
+
+Django:
+Running 15s test @ http://localhost:6006
+  4 threads and 500 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    13.16ms   94.95ms   1.67s    98.14%
+    Req/Sec   490.30    317.82     1.77k    68.48%
+  27264 requests in 15.04s, 4.34MB read
+  Socket errors: connect 0, read 27264, write 0, timeout 29
+Requests/sec:   1812.49
+Transfer/sec:    295.59KB
+
+Flask:
+Running 15s test @ http://localhost:3000
+  4 threads and 500 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    69.09ms  100.66ms   1.78s    96.77%
+    Req/Sec   595.90     97.37     0.91k    69.33%
+  35603 requests in 15.06s, 6.28MB read
+  Socket errors: connect 0, read 0, write 0, timeout 29
+Requests/sec:   2364.83
+Transfer/sec:    427.25KB
+
+Tornado: 
+Running 15s test @ http://localhost:5000
+  4 threads and 500 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    83.55ms    9.13ms 271.39ms   88.46%
+    Req/Sec     1.47k   163.83     1.88k    64.00%
+  87776 requests in 15.05s, 17.41MB read
+Requests/sec:   5833.30
+Transfer/sec:      1.16MB
